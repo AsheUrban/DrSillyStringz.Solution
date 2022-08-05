@@ -15,7 +15,8 @@
 
   @foreach (Engineer engineer in Model)
   {
-    <li>@Html.ActionLink($"{engineer.Name}", "Details", new { id = engineer.EngineerId })
+    <li>@Html.ActionLink($"{engineer.Name}", "Details", new { id = engineer.EngineerId }) 
+      @* | @engineer.Machine.Type *@
   </li>
   }
 
