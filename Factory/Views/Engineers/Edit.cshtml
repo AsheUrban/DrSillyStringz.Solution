@@ -1,0 +1,24 @@
+@{
+  Layout = "_Layout";
+}
+
+@using Factory.Models;
+@model Factory.Models.Engineer
+
+<h2>EDIT ENGINEER |  @Html.DisplayFor(model => model.Name)</h2>
+<hr />
+@using (Html.BeginForm())
+{
+  @Html.HiddenFor(model => model.EngineerId)
+  <span> | </span> @Html.LabelFor(model => model.Name) <span> | </span> 
+  @Html.TextBoxFor(model => model.Name) <span> | </span> 
+  @Html.LabelFor(model => model.Specialty) <span> | </span> 
+  @Html.EditorFor(model => model.Specialty) <span> | </span> 
+
+  @Html.Label("Select Machine: ") <span> | </span> 
+  @Html.DropDownList("MachineId") <span> | </span> 
+
+  <input type="submit" value="Save" />
+<hr />
+  <p class="fancyBtn">@Html.ActionLink("Delete Engineer", "Delete", new { id = Model.EngineerId })</p>
+}

@@ -1,0 +1,17 @@
+@{
+  Layout = "_Layout";
+}
+
+@using Factory.Models;
+@model Factory.Models.Engineer
+
+<h2>Are you sure you want to delete this Engineer?</h2>
+
+@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)
+@using (Html.BeginForm())
+{
+    <input type="submit" value="Delete" />
+}
+
+<p class="fancy">@Html.ActionLink("Back to Machines", "Index", "Machines")</p>
+<p class="fancyBtn">@Html.ActionLink("Back to Engineers", "Index", "Engineers")</p>
