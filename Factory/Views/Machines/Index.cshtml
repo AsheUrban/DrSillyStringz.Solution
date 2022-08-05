@@ -6,13 +6,13 @@
 @model List<Factory.Models.Machine>;
 
 <h2>MACHINES</h2>
-<p>Select a machine to view it's details and work orders.</p>
+<h3>Select a machine to view it's details and work orders.</h3>
 <hr />
 
 <div class="card">
 @if (@Model.Count == 0)
 {
-  <p><strong>No Machines have been added yet!</strong></p>
+  <h3>No Machines have been added yet.</h3>
 }
 @foreach (Machine machine in Model)
 {
