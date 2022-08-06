@@ -10,8 +10,8 @@
 @Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)
 @using (Html.BeginForm())
 {
-    <input type="submit" value="Delete" />
+    <input type="submit" value="Delete" class="fancyBtn2" />
 }
 
-<p class="fancy">@Html.ActionLink("Back to Machines", "Index", "Machines")</p>
 <p class="fancyBtn">@Html.ActionLink("Back to Engineers", "Index", "Engineers")</p>
+<p class="fancyBtn">@Html.ActionLink("Back to Machines", "Index", "Machines")</p>

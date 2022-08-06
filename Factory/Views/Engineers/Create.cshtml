@@ -4,16 +4,21 @@
 
 @model Factory.Models.Engineer
 
-<h4>Add a new Engineer</h4>
+<h2>ADD AN ENGINEER</h2>
+<p>To add a machine to an engineer, first add the engineer and then edit their details to include any machines they are currently working on.</p>
+<hr />
+<div class="card">
 @using (Html.BeginForm())
 {
-  @Html.LabelFor(model => model.Name)
+  @Html.Label("Name: ")
   @Html.TextBoxFor(model => model.Name)
-
-  @Html.LabelFor(model => model.Specialty)
+  <br>
+  @Html.Label("Specialty: ")
   @Html.TextBoxFor(model => model.Specialty)
-
-  <input type="submit" value="Add New Engineer" />
+  <br>
+  <input type="submit" value="ADD" class="fancyBtn2" />
 }
-
-<p>@Html.ActionLink("Back to All Engineers", "Index", "Engineers")</p>
+</div>
+<hr />
+<p class="fancyBtn">@Html.ActionLink("Back to Engineers", "Index", "Engineers")</p>
+<p class="fancyBtn">@Html.ActionLink("Back to Machines", "Index", "Machines")</p>

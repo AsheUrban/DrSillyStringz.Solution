@@ -6,23 +6,20 @@
 @model Factory.Models.Machine
 
 <h2>ADD A MACHINE</h2>
+<p>To add an engineer to a machine, first add the machine and then edit it to include any engineers working on it.</p>
 <hr />
+<div class="card">
 @using (Html.BeginForm())
 {
-  <span> | </span> @Html.LabelFor(model => model.Type) <span> | </span> 
-  @Html.TextBoxFor(model => model.Type) <span> | </span> 
-  @Html.LabelFor(model => model.Description) <span> | </span> 
-  @Html.EditorFor(model => model.Description) <span> | </span> 
-  @Html.Label("Select Engineer") <span> | </span> 
-  @Html.DropDownList("EngineerId") <span> | </span> 
-  @* <br>
-  <span> | </span> @Html.LabelFor(model => model.DateOfLastApp) <span> | </span>
-  @Html.TextBoxFor(model => model.DateOfLastApp) <span> | </span>
-  @Html.LabelFor(model => model.Notes) <span> | </span>
-  @Html.TextBoxFor(model => model.Notes) <span> | </span> *@
-<hr />
+  @Html.Label("Machine Type: ") 
+  @Html.TextBoxFor(model => model.Type)
+  <br>
+  @Html.Label("Project Description: ") 
+  @Html.EditorFor(model => model.Description) 
+  <br>
   <input type="submit" value="ADD" class="fancyBtn2" />
 }
-
-<p>@Html.ActionLink("Show All Machines", "Index", "Machines")</p>
-<p>@Html.ActionLink("Show All Engineers", "Index", "Engineers")</p>
+</div>
+<hr />
+<p class="fancyBtn">@Html.ActionLink("Back to Machines", "Index", "Machines")</p>
+<p class="fancyBtn">@Html.ActionLink("Back to Engineers", "Index", "Engineers")</p>

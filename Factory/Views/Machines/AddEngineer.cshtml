@@ -5,20 +5,19 @@
 @using Factory.Models;
 @model Factory.Models.Machine
 
-<h2>Add a Engineer</h2>
-
-<h4>Add a Engineer to this Machine: @Html.DisplayFor(model => model.Type)</h4>
-
+<h2>Add an Engineer to @Html.DisplayFor(model => model.Type)</h2>
+<hr />
 @using (Html.BeginForm())
 {
     @Html.HiddenFor(model => model.MachineId)
 
-    @Html.Label("Select Engineer")
+    @Html.Label("Select Engineer: ")
+    <br>
     @Html.DropDownList("EngineerId")
-
-    <input type="submit" value="Save" />
+    <br>
+    <input type="submit" value="Save" class="fancyBtn2" />
 }
-
+<hr />
 <p class="fancyBtn">@Html.ActionLink("Add new Engineer", "Create", "Engineers")</p> 
-<p class="fancyBtn">@Html.ActionLink("Back to Machines", "Index", "Machines")</p>
 <p class="fancyBtn">@Html.ActionLink("Back to Engineers", "Index", "Engineers")</p>
+<p class="fancyBtn">@Html.ActionLink("Back to Machines", "Index", "Machines")</p>
