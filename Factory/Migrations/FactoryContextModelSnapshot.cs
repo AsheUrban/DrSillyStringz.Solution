@@ -63,6 +63,9 @@ namespace Factory.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
+                    b.Property<int>("EngineerMachineId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Type")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 

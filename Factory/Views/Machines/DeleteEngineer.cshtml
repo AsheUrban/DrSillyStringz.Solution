@@ -1,0 +1,23 @@
+@{
+  Layout = "_Layout";
+}
+
+@using Factory.Models;
+@model Factory.Models.Machine
+
+<h2>Remove Engineer from @Html.DisplayFor(model => model.Type)</h2>
+<hr />
+@using (Html.BeginForm())
+{
+    @* @Html.HiddenFor(model => model.MachineId) *@
+
+    @Html.Label("Select Engineer: ")
+    <br>
+    @Html.DropDownList("EngineerId")
+    <br>
+    <input type="submit" value="Save" class="fancyBtn2" />
+}
+<hr />
+<p class="fancyBtn">@Html.ActionLink("Add new Engineer", "Create", "Engineers")</p> 
+<p class="fancyBtn">@Html.ActionLink("Back to Engineers", "Index", "Engineers")</p>
+<p class="fancyBtn">@Html.ActionLink("Back to Machines", "Index", "Machines")</p>

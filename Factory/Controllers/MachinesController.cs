@@ -101,8 +101,15 @@ namespace Factory.Controllers
       return RedirectToAction("Index");
     }
 
+    public ActionResult DeleteEngineer(int id)
+    {
+      var thisMachine = _db.Machines.FirstOrDefault(Machine => Machine.MachineId == id);
+      ViewBag.EngineerId = new SelectList(_db.Engineers, "EngineerId", "Name", "Specialty");
+      return View(thisMachine);
+    }
+
     [HttpPost]
-    public ActionResult DeleteEngineer(int joinId)
+    public ActionResult DeleteEngineer(Machine machine, int joinId)
     {
       var joinEntry = _db.EngineerMachine.FirstOrDefault(entry => entry.EngineerMachineId == joinId);
       _db.EngineerMachine.Remove(joinEntry);

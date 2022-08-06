@@ -5,19 +5,18 @@
 @using Factory.Models;
 @model Factory.Models.Machine
 
-<h2>Machine Details:</h2>
+<h2>@Html.DisplayFor(model => model.Type) Details:</h2>
 <hr />
-@Html.DisplayFor(model => model.Type)
 @Html.DisplayFor(model => model.Description)
 <hr />
 
 @if(@Model.JoinEntities.Count == 0)
 {
-  <p><strong>No Engineer has been assigned to this Machine yet.</strong></p>
+  <p><strong>No Engineer has been assigned to @Html.DisplayFor(model => model.Type) yet.</strong></p>
 }
 else
 {
-  <p><strong>Engineers assigned to This Machine: </strong></p>
+  <p><strong>Engineers assigned to @Html.DisplayFor(model => model.Type): </strong></p>
   <ul>
   @foreach(var join in Model.JoinEntities)
   {

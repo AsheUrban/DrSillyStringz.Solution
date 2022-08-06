@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System;
 
+
 namespace Factory.Models
 {
     public class Machine
@@ -12,6 +13,7 @@ namespace Factory.Models
         public int MachineId { get; set; }
         public string Type { get; set; }
         public string Description { get; set; }
+        public int EngineerMachineId { get; set; }
         public virtual ICollection<EngineerMachine> JoinEntities { get; }
     }
 }

@@ -28,7 +28,8 @@ namespace Factory.Migrations
                     MachineId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     Type = table.Column<string>(type: "longtext CHARACTER SET utf8mb4", nullable: true),
-                    Description = table.Column<string>(type: "longtext CHARACTER SET utf8mb4", nullable: true)
+                    Description = table.Column<string>(type: "longtext CHARACTER SET utf8mb4", nullable: true),
+                    EngineerMachineId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
