@@ -53,11 +53,10 @@ _Main Project Folder:_ Factory
 
 _NOTE:_ [password] should be replaced by your password. Do not include square brackets in final configuration.
 
-## Known Bugs
+## Known Bugs -- IMPORTANT --
 
-* _Can add a machine to an engineer, but not delete it._
-* _Can add an engineer to a machine, but not delete it._
-* _There is no page that displays both machines and engineers together._
+* _Main branch is broken and won't merge with ViewAllDetailsPage branch._
+* _ViewAllDetailsPage branch has fully functioning project!_
 
 ## License
 
