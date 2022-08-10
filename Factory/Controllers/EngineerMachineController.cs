@@ -18,7 +18,7 @@ namespace Factory.Controllers
 
     public ActionResult Index()
     {
-      ViewBag.PageTitle = "View All Engineers and Machines";
+      ViewBag.PageTitle = "View Engineers & Machines";
       List<EngineerMachine> model = _db.EngineerMachine.ToList();
       return View(model);
     }
