@@ -55,8 +55,7 @@ _NOTE:_ [password] should be replaced by your password. Do not include square br
 
 ## Known Bugs -- IMPORTANT --
 
-* _Main branch is broken and won't merge with ViewAllDetailsPage branch._
-* _ViewAllDetailsPage branch has fully functioning project!_
+* _No known bugs._
 
 ## License
 
