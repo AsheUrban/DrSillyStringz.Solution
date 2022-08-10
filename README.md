@@ -42,14 +42,17 @@ _Main Project Folder:_ Factory
 ## Setup/Installation Requirements
 
 * _Clone or download responsitory to your local._
-* _Cd into Factory and run dotnet restore, dotnet build, and dotnet run to run web application._
+* _Cd into Factory and run dotnet restore, dotnet build to confirm the project has no errors._
 * _Touch appsettings.json and add the following configuration:_
 
 {
   "ConnectionStrings": {
-      "DefaultConnection": "Server=localhost;Port=3306;database=ashe_urban;uid=root;pwd=[password];"
+      "DefaultConnection": "Server=localhost;Port=3306;database=[first_last];uid=root;pwd=[password];"
   }
 }
+
+* _Run dotnet ef migrations add Initial and dotnet ef database update to build database._
+* _Then use dotnet watch run to run web application._
 
 _NOTE:_ [password] should be replaced by your password. Do not include square brackets in final configuration.
 
