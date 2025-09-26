@@ -34,24 +34,32 @@ _You've been contracted by the factory of the famous Dr. Sillystringz to build a
 * _Clone or download responsitory to your local._
 * _Cd into .\Factory and run dotnet restore to confirm the project has no errors._
 * _Touch appsettings.json and add the following configuration:_
-
+```
 {
   "ConnectionStrings": {
       "DefaultConnection": "Server=localhost;Port=3306;database=[first_last];uid=[yours];pwd=[password];"
   }
 }
-
+```
 _NOTE:_ [first_last] [yours] [password] should all be replaced by your MySql access details. Do not include square brackets in final configuration.
 
 * _Start localhost in MySQL_
 * _Build database:_
-   * dotnet ef migrations add Initial 
-   * dotnet ef database update 
+  ```
+  dotnet ef migrations add Initial 
+  ```
+  ```
+  dotnet ef database update 
+  ```
 * _Then use the following to run web application:_
-   * dotnet run OR dotnet watch run
+   ```
+   dotnet run OR dotnet watch run
+   ```
 * _Navigate to the localhost from your browser and explore the project!_
 * _If you are seeing an error that tables cannot befound, there are missing or more than one DbContexts, or there are unresolvable errors related to the database use:_
-  * dotnet ef database drop -f --context FactoryContext
+  ```
+  dotnet ef database drop -f --context FactoryContext
+  ```
 * _Then delete your migrations folder and everything in it, then rerun intial migrations and database update using dotnet as outlined above._
 
 ## Known Bugs
