@@ -34,13 +34,13 @@ _You've been contracted by the factory of the famous Dr. Sillystringz to build a
 * _Clone or download responsitory to your local._
 * _Cd into .\Factory and run dotnet restore to confirm the project has no errors._
 * _Touch appsettings.json and add the following configuration:_
-```
-{
-  "ConnectionStrings": {
-      "DefaultConnection": "Server=localhost;Port=3306;database=[first_last];uid=[yours];pwd=[password];"
+  ```
+  {
+    "ConnectionStrings": {
+        "DefaultConnection": "Server=localhost;Port=3306;database=[first_last];uid=[yours];pwd=[password];"
+    }
   }
-}
-```
+  ```
 _NOTE:_ [first_last] [yours] [password] should all be replaced by your MySql access details. Do not include square brackets in final configuration.
 
 * _Start localhost in MySQL_
