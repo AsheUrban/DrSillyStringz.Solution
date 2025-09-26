@@ -41,7 +41,7 @@ _You've been contracted by the factory of the famous Dr. Sillystringz to build a
     }
   }
   ```
-_NOTE:_ [first_last] [yours] [password] should all be replaced by your MySql access details. Do not include square brackets in final configuration.
+  _NOTE:_ [first_last] [yours] [password] should all be replaced by your MySql access details. Do not include square brackets in final configuration.
 
 * _Start localhost in MySQL_
 * _Build database:_
