@@ -1,4 +1,4 @@
-# Week 11 Independent Project: Dr. SillyStringz's Factory Database Solution!
+# Dr. SillyStringz's Factory Database Solution
 
 #### A website that allows Factory Managers to track their Engineers and Machines!
 
@@ -68,10 +68,8 @@ _You've been contracted by the factory of the famous Dr. Sillystringz to build a
 
 ## License
 
-* MIT
+* _Educational Use Only — This repository is provided for classroom and personal learning purposes. It is not licensed for public deployment, redistribution, or commercial use. No warranty or support is provided._
 
-## Contact Information
-
-_Please contact me with any questions or contribuitions, ashe@goldentongue.com_
+## 
 
 Copyright(c) July 2022 Ashe Urban
